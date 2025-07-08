@@ -12,7 +12,6 @@ import { DiJavascript } from "react-icons/di";
 import { SiTypescript, SiExpress, SiMongodb, SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import type { ReactNode } from "react";
-import com from '../assets/com.gif'
 
 interface skillSchma {
   icon: ReactNode;
@@ -79,38 +78,8 @@ function Skills() {
           <div className="bg-gray-800 border border-gray-600 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <div className="flex justify-between items-start flex-wrap gap-2">
               <div>
-                <div className="text-xl font-semibold text-white">
-                  <p>Web Developer Intern @ SocialDrive</p>
-                  <img src={com} alt="" className="w-40 h-20" />
-                </div>
-                <p className="text-sm text-gray-400">Feb 2025 – Present</p>
-              </div>
-              <FaDotCircle className="text-white mt-1" />
-            </div>
-
-            <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-300 text-sm leading-relaxed">
-              <li>
-                Contributed to real-world, production-ready applications as part
-                of the development team.
-              </li>
-              <li>
-                Delivered 3+ full-stack projects using React, Tailwind, Zustand,
-                Node.js, Express, and MongoDB.
-              </li>
-              <li>
-                Integrated features like JWT authentication, REST APIs,
-                Cloudinary media handling, and transactional messaging using
-                Tilow.
-              </li>
-            </ul>
-          </div>
-
-          {/* Experience Card 2 */}
-          <div className="bg-gray-800 border border-gray-600 rounded-xl p-6 shadow-md hover:shadow-lg transition">
-            <div className="flex justify-between items-start flex-wrap gap-2">
-              <div>
                 <p className="text-xl font-semibold text-white">
-                  Self Employed
+                  Independent Learner
                 </p>
                 <p className="text-sm text-gray-400">Apr 2024 – Present</p>
               </div>
@@ -132,6 +101,63 @@ function Skills() {
               </li>
             </ul>
           </div>
+          <div className="bg-gray-800 border border-gray-600 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <div className="flex justify-between items-start flex-wrap gap-2">
+              <div>
+                <div className="text-xl font-semibold text-white">
+                  <p>Full-Time Employee @ SocialDrive</p>
+                  <p className="text-lg mt-2">Social Drive</p>
+                </div>
+                <p className="text-sm text-gray-400">July 2025 – Present</p>
+              </div>
+              <FaDotCircle className="text-white mt-1" />
+            </div>
+            <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-300 text-sm leading-relaxed">
+              <li>
+                Contributed to real-world, production-ready applications as part
+                of the development team.
+              </li>
+              <li>
+                Delivered 3+ full-stack projects using React, Tailwind, Zustand,
+                Node.js, Express, and MongoDB.
+              </li>
+              <li>
+                Integrated features like JWT authentication, REST APIs,
+                Cloudinary media handling, and transactional messaging using
+                Tilow.
+              </li>
+            </ul>
+          </div>
+          <div className="bg-gray-800 border border-gray-600 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <div className="flex justify-between items-start flex-wrap gap-2">
+              <div>
+                <div className="text-xl font-semibold text-white">
+                  <p>Full-Time Employee @ SocialDrive</p>
+                  <p className="text-lg mt-2">Social Drive</p>
+                </div>
+                <p className="text-sm text-gray-400">July 2025 – Present</p>
+              </div>
+              <FaDotCircle className="text-white mt-1" />
+            </div>
+            <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-300 text-sm leading-relaxed">
+              <li>
+                Contributed to real-world, production-ready applications as part
+                of the development team.
+              </li>
+              <li>
+                Delivered 3+ full-stack projects using React, Tailwind, Zustand,
+                Node.js, Express, and MongoDB.
+              </li>
+              <li>
+                Integrated features like JWT authentication, REST APIs,
+                Cloudinary media handling, and transactional messaging using
+                Tilow.
+              </li>
+            </ul>
+          </div>
+
+          {/* Experience Card 2 */}
+          
         </div>
       </section>
     </main>
