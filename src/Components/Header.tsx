@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="font-inter bg-primary px-6 md:px-10 py-4 flex items-center justify-between text-white border-b-[2px] border-gray-600">
+    <header className="font-inter bg-primary px-6 md:px-10 py-4 flex items-center justify-between text-white border-b-[2px] border-gray-600 sticky top-0 z-50">
       <div className="flex items-center gap-3">
         <img src={pic} alt="" className='w-8 h-8 object-cover bg-white rounded-full' />
         <p className="font-bold text-base md:text-lg">Rohit's Portfolio</p>

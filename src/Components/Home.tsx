@@ -4,14 +4,15 @@ function Home() {
   return (
     <main
       id="section1"
-      className="bg-primary flex flex-row items-center justify-between pt-24 pb-20 text-white font-inter px-40"
+      className="bg-primary flex flex-row items-center justify-center pt-24 pb-20 text-white font-inter px-40"
     >
-      <section className="w-2/3">
+      <section className="w-2/3 px-5">
+        <p className="">Hello, My name is</p>
         <p className="text-3xl md:text-4xl font-semibold mb-2">Rohit Singha</p>
         <p className="text-sm md:text-base text-gray-300 mb-1">
           Full Stack Web Developer
         </p>
-        <p className="text-sm md:text-base text-gray-400 max-w-xl my-3">
+        <p className="text-sm md:text-base text-gray-400 my-3">
           Full-stack MERN developer, BCA graduate, currently building web apps at SocialDrive. Passionate about clean UI & robust backend. Planning to pursue MCA to deepen my knowledge and skills further.
         </p>
         <button 
@@ -21,9 +22,9 @@ function Home() {
         </button>
       </section>
       <img
-        src={"https://cdn-icons-png.flaticon.com/128/3242/3242257.png"}
+        src={"https://cdn-icons-png.flaticon.com/512/3242/3242257.png"}
         alt="Rohit Singha"
-        className="w-1/3"
+        className="w-1/4 object-contain"
       />
     </main>
   );

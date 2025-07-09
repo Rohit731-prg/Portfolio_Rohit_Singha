@@ -1,12 +1,12 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-interface conSchma {
+interface ConSchema {
   name: string;
   link: string;
 }
 
 function Contact() {
-  const con: conSchma[] = [
+  const con: ConSchema[] = [
     { name: "GitHub", link: "https://github.com/Rohit731-prg" },
     {
       name: "LinkedIn",
@@ -17,7 +17,7 @@ function Contact() {
   return (
     <main
       id="section5"
-      className="font-inter bg-primary px-6 md:px-20 lg:px-40 py-10 text-white"
+      className="font-inter bg-primary px-4 sm:px-10 md:px-20 lg:px-40 py-10 text-white"
     >
       <p className="text-3xl md:text-4xl font-semibold mb-6">Contact</p>
 
@@ -35,18 +35,41 @@ function Contact() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-        {con.map((item, index) => (
-          <button 
-          onClick={() => window.open(item.link, "_blank")}
-          key={index} 
-          className={`group text-neutral-50 relative duration-500 font-bold flex justify-start gap-2 items-center p-2 pr-6 ${item.name == 'LinkedIn' ? 'hover:bg-sky-600 bg-sky-700' : 'hover:bg-gray-600 bg-gray-700'} rounded-sm`}>
-            <p className="text-2xl">{item.name == "LinkedIn" ? <FaLinkedin /> : <FaGithub />}</p>
-            <span className="border-l-2 px-1">Rohit Singha</span>
-            <div className="group-hover:opacity-100 opacity-0 top-16 absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-500 bg-sky-600 rounded-lg shadow-sm before:w-3 before:h-3 before:rotate-45 before:-top-1 before:left-20 before:bg-sky-600 before:absolute">
-              See my profile!
+        {con.map((item, index) => {
+          const isLinkedIn = item.name === "LinkedIn";
+          return (
+            <div
+              key={index}
+              role="button"
+              onClick={() => window.open(item.link, "_blank")}
+              className={`group cursor-pointer relative flex items-center gap-2 p-3 pr-6 rounded-md font-bold transition-all duration-300 ${
+                isLinkedIn
+                  ? "bg-sky-700 hover:bg-sky-600"
+                  : "bg-gray-700 hover:bg-gray-600"
+              }`}
+            >
+              <span className="text-2xl">
+                {isLinkedIn ? <FaLinkedin /> : <FaGithub />}
+              </span>
+              <span className="border-l-2 px-2">Rohit Singha</span>
+
+              {/* Tooltip */}
+              <div
+                className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 px-3 py-2 text-sm rounded-md shadow ${
+                  isLinkedIn ? "bg-sky-600" : "bg-gray-600"
+                }`}
+              >
+                See my profile!
+                {/* Tooltip arrow */}
+                <div
+                  className={`absolute w-3 h-3 rotate-45 -top-1 left-1/2 -translate-x-1/2 ${
+                    isLinkedIn ? "bg-sky-600" : "bg-gray-600"
+                  }`}
+                ></div>
+              </div>
             </div>
-          </button>
-        ))}
+          );
+        })}
       </div>
     </main>
   );
