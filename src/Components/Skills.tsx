@@ -105,10 +105,10 @@ function Skills() {
             <div className="flex justify-between items-start flex-wrap gap-2">
               <div>
                 <div className="text-xl font-semibold text-white">
-                  <p>Full-Time Employee @ SocialDrive</p>
+                  <p>Intern @ SocialDrive</p>
                   <p className="text-lg mt-2">Social Drive</p>
                 </div>
-                <p className="text-sm text-gray-400">July 2025 – Present</p>
+                <p className="text-sm text-gray-400">Oct 2024 – Jun 2025</p>
               </div>
               <FaDotCircle className="text-white mt-1" />
             </div>
