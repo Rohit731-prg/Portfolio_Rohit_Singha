@@ -6,6 +6,11 @@ const useScroller = create(() => ({
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+    },
+
+    explore: () => {
+        const ele = document.getElementById('section2');
+        ele?.scrollIntoView({ behavior: 'smooth' });
     }
 }));
 
