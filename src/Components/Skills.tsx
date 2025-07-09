@@ -56,7 +56,7 @@ function Skills() {
         {skillLists.map((item, index) => (
           <div
             key={`${item.name}-${index}`}
-            className="flex items-center gap-4 p-5 rounded-xl border-[1.5px] border-gray-600 bg-gray-700 shadow-md hover:shadow-lg transition-all"
+            className="flex items-center gap-4 p-5 rounded-xl border-[1.5px] border-gray-600 bg-gray-700 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-600 hover:shadow-xl hover:border-gray-400"
           >
             <div className="text-3xl">{item.icon}</div>
             <div>
@@ -66,6 +66,7 @@ function Skills() {
           </div>
         ))}
       </div>
+
 
       {/* Experience Section */}
       <section className="mt-20">

@@ -6,7 +6,7 @@ function Home() {
       id="section1"
       className="bg-primary flex flex-row items-center justify-center pt-24 pb-20 text-white font-inter px-40"
     >
-      <section className="w-2/3 px-5">
+      <section className="w-2/3 pr-10">
         <p className="">Hello, My name is</p>
         <p className="text-3xl md:text-4xl font-semibold mb-2">Rohit Singha</p>
         <p className="text-sm md:text-base text-gray-300 mb-1">
