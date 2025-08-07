@@ -1,5 +1,5 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
 import {
   FaDotCircle,
   FaHtml5,
@@ -37,12 +37,11 @@ function Skills() {
     { icon: <FaGithub />, name: "Git & GitHub", lavel: "Intermediate" },
   ];
 
-  useGSAP(() => {
-    const skillsTL = gsap.timeline();
-    gsap.from(containerRef.current, {
-      
-    })
-  }, []);
+  // useGSAP(() => {
+  //   const skillsTL = gsap.timeline();
+  //   gsap.from(containerRef.current, {
+  //   })
+  // }, []);
 
   return (
     <main className="font-inter bg-primary text-white px-4 sm:px-8 md:px-16 lg:px-32 py-10">
