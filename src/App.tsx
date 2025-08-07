@@ -7,7 +7,7 @@ import Skills from "./Components/Skills"
 
 function App() {
   return (
-    <main>
+    <main className="bg-primary">
       <Header />
       <Home />
       <About />
